@@ -14,11 +14,13 @@ const App = () => {
       <SavedList list={savedList} />
       <Switch>
         <Route path='/'>
+          
         </Route>
         <Route path='/movies/:movieID'>
+          
         </Route>
       </Switch>
+    </div>
   );
 };
-
 export default App;
