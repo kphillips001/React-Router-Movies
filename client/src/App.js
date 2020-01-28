@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Route, Switch } from 'react-router-dom';
 import SavedList from './Movies/SavedList';
 
 const App = () => {
@@ -12,8 +12,12 @@ const App = () => {
   return (
     <div>
       <SavedList list={savedList} />
-      <div>Replace this Div with your Routes</div>
-    </div>
+      <Switch>
+        <Route path='/'>
+        </Route>
+        <Route path='/movies/:movieID'>
+        </Route>
+      </Switch>
   );
 };
 
